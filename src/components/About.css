@@ -1,0 +1,84 @@
+/* General container */
+.container {
+  color: #333; /* main text color */
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center; /* center all text */
+}
+
+/* Headings */
+h2, h4 {font-weight: bold;
+  color: #2c3e50; /* dark blue-gray */
+  font-style: italic; /* italic */
+  text-align: center;
+}
+
+/* Paragraphs */
+p {
+  color: #555; /* gray */
+  line-height: 1.6;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc; /* bullets */
+  padding-left: 40px; /* keep some indentation for bullets */
+  color: #555;
+  text-align: center; /* center the entire list block */
+}
+
+ul li {
+  display: list-item; /* keep bullets */
+  margin: 5px 0; /* spacing between items */
+  font-style: italic; /* italic text */
+  text-align: left; /* align text next to bullet */
+}
+
+/* Optional: make list horizontal without losing bullets */
+.horizontal-list {
+  list-style: disc; /* bullets still appear */
+  padding-left: 0;
+  text-align: center;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin: 0 15px;
+  font-style: italic;
+  list-style-position: inside; /* bullet inside item box */
+}
+
+
+/* Images */
+img1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+img1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Highlight Lavanya section */
+.lav-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-style: italic;
+  color: #333; /* ensure text color */
+}
+
+/* Footer tagline (make white and italic) */
+.footer-tagline {
+  color: white !important; /* force white color */
+  font-style: italic;
+  text-align: center;
+}

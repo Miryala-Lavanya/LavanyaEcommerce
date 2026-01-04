@@ -1,0 +1,42 @@
+/* Container styling */
+.collections-container {
+  text-align: center; /* center all content */
+  margin: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+/* Heading styling */
+.collections-title {
+  font-size: 26px;
+  font-style: italic;
+  color: #6a0572; /* purple tone */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* List styling */
+.collections-list {
+  list-style-type: none; /* remove default bullets */
+  padding-left: 0; /* remove default padding */
+  display: inline-block; /* make list width shrink to content */
+}
+
+.collections-list li {
+  margin: 8px 0;
+}
+
+.collections-list li a {
+  text-decoration: none; /* remove underline */
+  color: #555; 
+  font-style: italic;
+  transition: all 0.3s ease;
+  display: inline-block; /* needed for transform to work nicely */
+  text-align: center;
+}
+
+.collections-list li a:hover {
+  color: #d63384;
+  font-weight: bold;
+  transform: scale(1.05);
+}

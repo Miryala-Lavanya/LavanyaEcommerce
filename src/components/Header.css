@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  background-color: rgb(211, 105, 211);
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-between;
+ 
+  
+}
+
+.header h2 {
+  color: blue;
+  font-style: italic;
+  
+}
+
+.header p {
+  
+  font-style: italic;font-weight: 600;
+   
+}
+.text-box{
+  text-align: center;
+  flex: 1;
+}
+

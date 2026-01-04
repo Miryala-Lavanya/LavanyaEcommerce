@@ -1,0 +1,118 @@
+/* Container for all blogs */
+.blogs-container {
+  text-align: center;
+  margin: 40px 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+/* Blogs list title */
+.blogs-title {
+  font-size: 32px;
+  color: #6a0572; /* purple */
+  font-style: italic;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Individual blog card */
+.blogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.blog-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Blog title */
+.blog-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a0572;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Blog date */
+.blog-date {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Blog excerpt */
+.blog-excerpt {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Read More link */
+.read-more {
+  display: inline-block;
+  color: #d63384;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.read-more:hover {
+  color: #6a0572;
+  transform: scale(1.05);
+}
+
+/* Single blog page */
+.blog-single-container {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.blog-single-title {
+  font-size: 28px;
+  color: #6a0572;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.blog-single-date {
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.blog-single-content {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Back link */
+.back-to-blogs {
+  display: inline-block;
+  margin-top: 25px;
+  color: #d63384;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.back-to-blogs:hover {
+  color: #6a0572;
+}

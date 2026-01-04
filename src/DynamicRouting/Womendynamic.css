@@ -1,0 +1,59 @@
+/* Womendynamic.css */
+.ind-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ind-image img {
+  width: 300px;       /* smaller size */
+  height: auto;       /* maintain aspect ratio */
+  border-radius: 10px; /* optional rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* optional shadow */
+  margin-bottom: 20px;
+}
+
+.ind-details {
+  text-align: center; /* center all text inside */
+}
+
+
+.ind-details h3 .label{
+  font-size: 18px;
+  color: black;padding: 5px;
+  margin: 10px 0; /* remove default margins */
+}
+
+.ind-details .name .value{ font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.ind-details .materials .value { font-size: 18px;font-weight: bold;
+  color: gray;
+}
+
+.ind-details .price .value{ font-size: 18px;font-weight: bold;
+  color: #b12704; /* highlight price in red */
+}
+
+.ind-details .avilability .value{ font-size: 18px;font-weight: bold;
+  color: #007600; /* green for availability */
+}
+
+.ind-details .rating .value{ font-size: 18px;font-weight: bold;
+  color: #ff9900; /* gold/orange for rating */
+}
+
+.ind-details button{
+  background-color:orangered;
+  border-radius: 10px;padding: 8px;width: 100px;
+  border: 2px solid black;color: white;
+}
+@media (max-width: 768px) {
+  .ind-image img {
+    width: 80%; /* responsive on mobile */
+  }
+}

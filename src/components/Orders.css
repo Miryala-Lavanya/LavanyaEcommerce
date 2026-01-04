@@ -1,0 +1,152 @@
+/* -------------------- Order Card -------------------- */
+.order-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 540px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* -------------------- Delivered Highlight -------------------- */
+.delivered-card {
+  border: 2px solid #28a745;
+  background: #f0fff0;
+  box-shadow: 0 10px 25px rgba(0,128,0,0.15);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideFadeIn 0.5s forwards;
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------- Product Name -------------------- */
+.order-card h4 {
+  color: #7a1f2b;
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* -------------------- Row for Category & Price -------------------- */
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* -------------------- Tracking Steps -------------------- */
+.track-steps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #5a3e36;
+  flex-wrap: wrap;
+}
+
+.track-steps span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  color: #5a3e36; /* default color */
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.track-steps span.active {
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.step-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  margin-right: 6px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.track-steps span.active .step-circle {
+  background: #d4af37;
+  transform: scale(1.2);
+}
+
+/* -------------------- Progress Bar -------------------- */
+.track-box {
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 10px;
+  margin-top: 6px;
+  position: relative;
+}
+
+.track-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #f0c27b, #d4af37);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out, background 0.3s;
+}
+
+/* -------------------- Status Text -------------------- */
+.order-status {
+  margin-top: 6px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.small-text {
+  font-weight: normal;
+  color: #555;
+}
+
+/* -------------------- Buttons -------------------- */
+.order-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  transition: transform 0.1s, opacity 0.2s, background 0.3s;
+}
+
+.order-btn:active {
+  transform: scale(0.97);
+}
+
+.update-btn { background: #d4af37; color: #fff; }
+.update-btn:hover { background: #b9962f; }
+
+.cancel-btn { background: #7a1f2b; color: #fff; }
+.cancel-btn:hover { background: #5a0f1a; }
+
+.reorder-btn { background: #5a3e36; color: #fff; }
+.reorder-btn:hover { background: #3f2a28; }
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 500px) {
+  .order-card { padding: 12px; }
+  .order-row { flex-direction: column; align-items: flex-start; }
+  .order-btn { width: 100%; margin-right: 0; }
+}
+
+@media (max-width: 400px) {
+  .track-steps { font-size: 11px; }
+}

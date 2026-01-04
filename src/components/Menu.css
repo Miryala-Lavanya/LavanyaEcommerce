@@ -1,0 +1,113 @@
+/* ================= NAVBAR ================= */
+.navbar {
+  background-color: azure;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 12px 20px;
+  
+}
+
+/* ================= LOGO ================= */
+.navbar-brand img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ================= MENU LIST ================= */
+.navbar-nav {
+  gap: 22px;
+}
+
+/* ================= NAV LINKS ================= */
+.navbar-nav .nav-link {
+  color: black !important;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue !important;
+  
+  opacity: 0.85;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown-menu {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.dropdown-item {
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #220ba8;
+  color:white;
+}
+
+/* ================= SEARCH ================= */
+form.d-flex input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+
+/* ================= ICON EFFECTS ================= */
+.navbar-nav .nav-link svg,
+.dropdown-item svg {
+  margin-right: 6px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover svg {
+  transform: scale(1.15);
+}
+
+/* ================= ICON COLORS ================= */
+.icon-home { color: #1e90ff; }
+.icon-about { color: #32cd32; }
+.icon-collections { color: #ff8c00; }
+.icon-blog { color: #ff1493; }
+.icon-contact { color: #8a2be2; }
+.icon-shop { color: #dc143c; }
+
+.icon-women { color: #ff69b4; }
+.icon-men { color: #1e90ff; }
+.icon-kids { color: #ffa500; }
+.icon-homeaccess { color: #32cd32; }
+.icon-new { color: #ff4500; }
+.icon-sale { color: #ff6347; }
+
+.icon-account { color: #20b2aa; }
+.icon-signin { color: #4682b4; }
+.icon-signup { color: #32cd32; }
+.icon-profile { color: #8a2be2; }
+.icon-orders { color: #ff8c00; }
+.icon-wishlist { color: #ff1493; }
+.icon-cart { color: #ff4500; }
+
+/* ================= DISABLED LINK ================= */
+.nav-link.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 10px;
+  }
+
+  form.d-flex {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
