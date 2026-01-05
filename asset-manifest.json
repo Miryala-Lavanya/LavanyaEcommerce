@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/LavanyaEcommerce/static/css/main.6c0f0093.css",
-    "main.js": "/LavanyaEcommerce/static/js/main.28d650bf.js",
+    "main.css": "/LavanyaEcommerce/static/css/main.90201187.css",
+    "main.js": "/LavanyaEcommerce/static/js/main.ccc5a8eb.js",
     "static/media/img2.png": "/LavanyaEcommerce/static/media/img2.560396e8eefe43616d96.png",
     "static/media/home1.webp": "/LavanyaEcommerce/static/media/home1.f84736be988fb0bc67ae.webp",
     "static/media/new1.jpg": "/LavanyaEcommerce/static/media/new1.0e982fececa562d769cc.jpg",
@@ -9,11 +9,11 @@
     "static/media/img1.png": "/LavanyaEcommerce/static/media/img1.62f7150ec0b926fefe02.png",
     "static/media/Passphoto_Lavanya-500pixels.jpg": "/LavanyaEcommerce/static/media/Passphoto_Lavanya-500pixels.2784eec8b8e2821c7395.jpg",
     "index.html": "/LavanyaEcommerce/index.html",
-    "main.6c0f0093.css.map": "/LavanyaEcommerce/static/css/main.6c0f0093.css.map",
-    "main.28d650bf.js.map": "/LavanyaEcommerce/static/js/main.28d650bf.js.map"
+    "main.90201187.css.map": "/LavanyaEcommerce/static/css/main.90201187.css.map",
+    "main.ccc5a8eb.js.map": "/LavanyaEcommerce/static/js/main.ccc5a8eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c0f0093.css",
-    "static/js/main.28d650bf.js"
+    "static/css/main.90201187.css",
+    "static/js/main.ccc5a8eb.js"
   ]
 }
